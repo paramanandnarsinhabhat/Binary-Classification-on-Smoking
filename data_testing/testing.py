@@ -60,3 +60,13 @@ test_probabilities = log_reg_model.predict_proba(X_test_scaled)[:, 1]
 # Prepare the submission file
 submission = pd.DataFrame({'id': test_data['id'], 'smoking': test_probabilities})
 submission.head()
+
+print(submission.head())
+
+# Define the path for saving the submission file
+submission_file_path = '/Users/paramanandbhat/Downloads/playground-series-s3e24/smoking_status_predictions.csv'
+
+# Save the submission file
+submission.to_csv(submission_file_path, index=False)
+
+submission_file_path
