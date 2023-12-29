@@ -31,7 +31,7 @@ train_data = pd.read_csv(train_file_path)
 X_train, X_val, y_train, y_val = split_data(train_data, ['id', 'smoking'], 'smoking')
 
 # Use the imported scale_features function to perform feature scaling on the training and validation sets.
-X_train_scaled, X_val_scaled = scale_features(X_train, X_val)
+X_train_scaled, X_val_scaled,scaler = scale_features(X_train, X_val)
 
 # Initialize the Logistic Regression model
 log_reg_model = LogisticRegression(max_iter=1000, random_state=42)
