@@ -2,6 +2,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
+from ..Utilities.common_utilities import split_data  # Import your functions
+
+
 train_file_path = '/Users/paramanandbhat/Downloads/playground-series-s3e24/train.csv'
 train_data = pd.read_csv(train_file_path)
 # Separate the features and the target variable
