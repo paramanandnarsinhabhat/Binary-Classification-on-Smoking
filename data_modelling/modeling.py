@@ -19,3 +19,4 @@ X_val_scaled = scaler.transform(X_val)
 # Display the shapes of the training and validation sets
 X_train_scaled.shape, X_val_scaled.shape, y_train.shape, y_val.shape
 print(X_train_scaled.shape, X_val_scaled.shape, y_train.shape, y_val.shape)
+
